@@ -3,17 +3,18 @@ var sass = require("gulp-sass");
 var autoprefixer = require("gulp-autoprefixer");
 var browser = require("browser-sync");
 
+// 起動するやつ
 gulp.task("server", function() {
-    browser({
-        server: {
-            baseDir: "./"
-        }
-    });
+  browser({
+    server: {
+      baseDir: "./"
+    }
+  });
 });
 
+// sass
 gulp.task("sass", function() {
     gulp.src("sass/**/*scss")
-        .pipe(frontnote())
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(gulp.dest("./css"))
@@ -21,5 +22,5 @@ gulp.task("sass", function() {
 });
 
 gulp.task("default",['server'], function() {
-    gulp.watch("sass/**/*.scss",["sass"]);
+  gulp.watch("sass/**/*.scss",["sass"]);
 });
