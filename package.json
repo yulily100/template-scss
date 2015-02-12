@@ -1,0 +1,23 @@
+{
+  "name": "gulptest",
+  "version": "0.0.0",
+  "description": "Gulp入門用テストプロジェクト",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yulily100/template-less.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yulily100/template-less/issues"
+  },
+  "homepage": "https://github.com/yulily100/template-less",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-sass": "^1.3.2"
+  }
+}
