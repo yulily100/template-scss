@@ -1,8 +1,8 @@
 h1 {
-    color: red;
+    color: #dddddd;
     transition: 200ms ease-out transform;
     &:hover {
         color: blue;
-        transform: translate(10px,0);
+        transform: translate(20px,0);
   }
 }
