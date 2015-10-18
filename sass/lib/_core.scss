@@ -1,0 +1,9 @@
+// Core (Main Style)
+h1 {
+    color: red;
+    transition: 200ms ease-out transform;
+    &:hover {
+        color: green;
+        transform: translate(80px,0);
+  }
+}
