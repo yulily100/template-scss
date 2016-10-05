@@ -18,6 +18,7 @@ gulp.task("sass", function() {
     gulp.src("sass/**/*scss")
         .pipe(plumber())
         .pipe(sass())
+        .pipe(autoprefixer())
         .pipe(gulp.dest("./css"))
         .pipe(browser.reload({stream:true}));
 });

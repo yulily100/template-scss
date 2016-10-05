@@ -167,7 +167,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -296,8 +295,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -359,6 +356,7 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 a {
+  -webkit-transition: all .2s;
   transition: all .2s; }
 
 h1 a, h1 a:hover, h2 a, h2 a:hover, h3 a, h3 a:hover, h4 a, h4 a:hover, h5 a, h5 a:hover, h6 a, h6 a:hover {
@@ -381,24 +379,38 @@ h1 a, h1 a:hover, h2 a, h2 a:hover, h3 a, h3 a:hover, h4 a, h4 a:hover, h5 a, h5
       margin-right: 10px; } }
 
 .box-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start; }
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .box-item4 {
-  flex-basis: 25%;
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
   box-sizing: border-box;
   min-width: 0;
   position: relative; }
 
 .box-item3 {
-  flex-basis: 33.3333%;
+  -webkit-flex-basis: 33.3333%;
+      -ms-flex-preferred-size: 33.3333%;
+          flex-basis: 33.3333%;
   box-sizing: border-box;
   min-width: 0;
   position: relative; }
 
 .box-item3x2 {
-  flex-basis: 66.6667%;
+  -webkit-flex-basis: 66.6667%;
+      -ms-flex-preferred-size: 66.6667%;
+          flex-basis: 66.6667%;
   box-sizing: border-box;
   min-width: 0;
   position: relative; }
