@@ -1,5 +1,5 @@
-@import "lib/normalize";
-@import "lib/variable";
-@import "lib/common";
-@import "lib/grid";
-@import "lib/core";
+@import "common/normalize";
+@import "common/variable";
+@import "common/common";
+@import "common/layout";
+@import "pages/core";
